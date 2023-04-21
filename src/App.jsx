@@ -12,7 +12,7 @@ function App() {
   const lightColor = "bg-gradient-to-l from-gray-500 via-gray-700 to-gray-900";
 
   return (
-    <div className="w-full relative bg-slate-900 text-white overflow-x-hidden m-0 p-0 box-border scroll-smooth" >
+    <div className="w-full relative bg-slate-900 text-white overflow-x-hidden m-0 p-0 box-border" >
       <div className={headerCSS} >
         <Header />
         <ProfComponent />    

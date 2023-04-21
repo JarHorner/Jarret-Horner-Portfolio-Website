@@ -29,6 +29,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* scroll bar style  */
 ::-webkit-scrollbar {
   width: 12px;
