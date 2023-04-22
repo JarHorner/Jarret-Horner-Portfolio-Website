@@ -26,7 +26,7 @@ const Services = () => {
                         adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide direction="down">
           <Card
             Icon={CgWebsite}
             title={"Web Designer"}
