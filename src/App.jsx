@@ -1,6 +1,6 @@
 import Header from "./components/Header/Header";
 import ProfComponent from "./components/Header/ProfComponent";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Interests from "./components/Interests/Interests";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
@@ -20,7 +20,7 @@ function App() {
       <div className={lightColor}>
         <Projects />
       </div>
-      <Testimonials />
+      <Interests />
       <div className={lightColor}>
         <Portfolio />
       </div>

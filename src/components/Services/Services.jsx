@@ -13,7 +13,7 @@ const Services = () => {
     >
       <Slide direction="down">
         <h4 className="text-xl">
-          My <span className="text-green-500">services</span>
+          <span className="text-green-500 font-bold uppercase">services</span>
         </h4>
         <h1 className="pt-4 text-4xl">What I Do</h1>
       </Slide>
