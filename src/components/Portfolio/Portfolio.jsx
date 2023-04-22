@@ -40,7 +40,7 @@ const Portfolio = () => {
           </Slide>
           <Slide direction="left">
             <p className="w-full pt-2 sm:w-1/2">
-              108A-Lakeview Dr SW, Calgary, Alberta (AB), Canada, T3E 5R9
+              108A-Lakeview Dr SW, Calgary, Alberta, Canada, T3E 5R9
             </p>
           </Slide>
         </div>
@@ -81,7 +81,7 @@ const Portfolio = () => {
           <Slide direction="left">
             <h1 className="text-xl py-4">Check my profiles</h1>
           </Slide>
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
             <Zoom>
               <span className={iconSpanCSS}>
                 <a className="text-2xl" href="/">
@@ -117,7 +117,7 @@ const Portfolio = () => {
           <Fade>
             <div
               onClick={scrollUp}
-              className="cursor-pointer w-8 h-8 bg-green-600 flex items-center justify-center text-3xl mt-8"
+              className="cursor-pointer w-8 h-8 bg-green-500 flex items-center justify-center text-3xl mt-8 hover:bg-green-600"
             >
               <AiOutlineArrowUp />
             </div>
@@ -127,10 +127,8 @@ const Portfolio = () => {
           </Slide>
         </div>
       </div>
-
-      <div>
-        <Contact />
-      </div>
+      
+      <Contact />
     </div>
   );
 };
