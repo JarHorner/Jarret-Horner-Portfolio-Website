@@ -27,15 +27,19 @@ const ProfComponent = () => {
             Jarret Horner
           </h1>
           <h3 className="font-medium text-xl capitalize">
-            Computer Information Systems Student &
+            4th year CIS Student &
           </h3>
           <h3 className="font-medium text-xl pb-5 capitalize">
             Future Software Developer
           </h3>
           <p className="font-light pb-12">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            iusto. Adipisci in qui officia provident tenetur sequi, deserunt
-            corporis quos?
+            Always enthusiastic to learn
+            more about new technologies. Previously worked in an internship with
+            Alberta Health Services Personal Health Portal team, creating automation applications and QA
+            testing. In my past jobs, I have learned how to provide amazing
+            customer service, excellent team cooperation, and manage time
+            effectively. Passionate about the innovative world of technology and
+            the possibilities that come with it.
           </p>
           <a
             href="#portfolio"
@@ -48,22 +52,38 @@ const ProfComponent = () => {
             <p className="text-base sm:text-sm">Check out my</p>
             <div className="flex items-center gap-4">
               <span className={spanCSS}>
-                <a className={aCSS} href="https://github.com/JarHorner" target="_blank">
+                <a
+                  className={aCSS}
+                  href="https://github.com/JarHorner"
+                  target="_blank"
+                >
                   <AiFillGithub />
                 </a>
               </span>
               <span className={spanCSS}>
-                <a className={aCSS} href="https://www.linkedin.com/in/jarrethorner/" target="_blank">
+                <a
+                  className={aCSS}
+                  href="https://www.linkedin.com/in/jarrethorner/"
+                  target="_blank"
+                >
                   <FaLinkedinIn />
                 </a>
               </span>
               <span className={spanCSS}>
-                <a className={aCSS} href="https://www.instagram.com/jarret_horner11/" target="_blank">
+                <a
+                  className={aCSS}
+                  href="https://www.instagram.com/jarret_horner11/"
+                  target="_blank"
+                >
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span className={spanCSS}>
-                <a className={aCSS} href="https://www.facebook.com/jarret.horner/" target="_blank">
+                <a
+                  className={aCSS}
+                  href="https://www.facebook.com/jarret.horner/"
+                  target="_blank"
+                >
                   <BsFacebook />
                 </a>
               </span>
