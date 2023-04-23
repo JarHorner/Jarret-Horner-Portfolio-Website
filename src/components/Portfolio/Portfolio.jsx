@@ -7,7 +7,7 @@ import {
   AiOutlineArrowUp,
   AiOutlineInstagram,
 } from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsMap } from "react-icons/bs";
 import { FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
 
@@ -24,7 +24,7 @@ const Portfolio = () => {
 
   return (
     <div
-      id="footer"
+      id="portfolio"
       className="mt-8 relative py-4 px-0 w-[90%] max-w-screen-xl my-0 mx-auto flex justify-between flex-col gap-12 sm:flex-row sm:gap-0 md:w-4/5"
     >
       <div className="flex-1">
@@ -36,13 +36,22 @@ const Portfolio = () => {
 
         <div className="py-4 px-0">
           <Slide direction="left">
-            <h1 className="text-xl">Address:</h1>
+            <h1 className="text-xl mb-2">Address:</h1>
           </Slide>
-          <Slide direction="left">
-            <p className="w-full pt-2 sm:w-1/2">
-              108A-Lakeview Dr SW, Calgary, Alberta, Canada, T3E 5R9
-            </p>
-          </Slide>
+          <div className="flex items-center gap-2">
+            <Slide direction="left">
+              <span>
+                <BsMap />
+              </span>
+              <a
+                target="_blank"
+                href="http://maps.google.com/?q=108A-5332 Lakeview Dr SW, Calgary, AB, T3E 5R9"
+                className="w-full pt-2 sm:w-1/2 text-green-300 hover:text-green-600"
+              >
+                108A-5332 Lakeview Dr SW, Calgary, Alberta, T3E 5R9
+              </a>
+            </Slide>
+          </div>
         </div>
 
         <div className="">
@@ -84,29 +93,45 @@ const Portfolio = () => {
           <div className="flex items-center gap-2">
             <Zoom>
               <span className={iconSpanCSS}>
-                <a className="text-2xl" href="/">
+                <a
+                  className="text-2xl"
+                  href="https://github.com/JarHorner"
+                  target="_blank"
+                >
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span className={iconSpanCSS}>
-                <a className="text-2xl" href="/">
+                <a
+                  className="text-2xl"
+                  href="https://www.linkedin.com/in/jarrethorner/"
+                  target="_blank"
+                >
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span className={iconSpanCSS}>
-                <a className="text-2xl" href="/">
-                  <BsFacebook />
+                <a
+                  className="text-2xl"
+                  href="https://www.instagram.com/jarret_horner11/"
+                  target="_blank"
+                >
+                  <AiOutlineInstagram />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span className={iconSpanCSS}>
-                <a className="text-2xl" href="/">
-                  <AiOutlineInstagram />
+                <a
+                  className="text-2xl"
+                  href="https://www.facebook.com/jarret.horner/"
+                  target="_blank"
+                >
+                  <BsFacebook />
                 </a>
               </span>
             </Zoom>
@@ -115,19 +140,19 @@ const Portfolio = () => {
 
         <div className="flex items-center gap-2 absolute right-12 top-64 sm:relative sm:right-0 sm:top-0">
           <Fade>
-            <div
+            <button
               onClick={scrollUp}
               className="cursor-pointer w-8 h-8 bg-green-500 flex items-center justify-center text-3xl mt-8 hover:bg-green-600"
             >
               <AiOutlineArrowUp />
-            </div>
+            </button>
           </Fade>
           <Slide direction="left">
             <p className="pt-8">Scoll to Top</p>
           </Slide>
         </div>
       </div>
-      
+
       <Contact />
     </div>
   );

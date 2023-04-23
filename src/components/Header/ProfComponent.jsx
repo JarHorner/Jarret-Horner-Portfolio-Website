@@ -32,37 +32,38 @@ const ProfComponent = () => {
           <h3 className="font-medium text-xl pb-5 capitalize">
             Future Software Developer
           </h3>
-          <p className="font-light">
+          <p className="font-light pb-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
             iusto. Adipisci in qui officia provident tenetur sequi, deserunt
             corporis quos?
           </p>
-          <button
-            className="px-8 py-2 mt-12 cursor-pointer bg-green-600 border-none text-white font-medium 
+          <a
+            href="#portfolio"
+            className="px-8 py-2.5 mt-12 cursor-pointer bg-green-600 text-white font-medium 
                         custom-shadow hover:hover-custom-shadow"
           >
             Let's talk
-          </button>
+          </a>
           <div className="mt-12 flex items-center gap-4">
             <p className="text-base sm:text-sm">Check out my</p>
             <div className="flex items-center gap-4">
               <span className={spanCSS}>
-                <a className={aCSS} href="/">
+                <a className={aCSS} href="https://github.com/JarHorner" target="_blank">
                   <AiFillGithub />
                 </a>
               </span>
               <span className={spanCSS}>
-                <a className={aCSS} href="/">
+                <a className={aCSS} href="https://www.linkedin.com/in/jarrethorner/" target="_blank">
                   <FaLinkedinIn />
                 </a>
               </span>
               <span className={spanCSS}>
-                <a className={aCSS} href="/">
+                <a className={aCSS} href="https://www.instagram.com/jarret_horner11/" target="_blank">
                   <AiOutlineInstagram />
                 </a>
               </span>
               <span className={spanCSS}>
-                <a className={aCSS} href="/">
+                <a className={aCSS} href="https://www.facebook.com/jarret.horner/" target="_blank">
                   <BsFacebook />
                 </a>
               </span>

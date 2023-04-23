@@ -29,8 +29,8 @@ const Header = () => {
           </a>
         </span>
         <span className="ml-4">
-          <a className={navLink} href="#testimonials">
-            Testimonials
+          <a className={navLink} href="#interests">
+            Interests
           </a>
         </span>
         <span className="ml-4">
