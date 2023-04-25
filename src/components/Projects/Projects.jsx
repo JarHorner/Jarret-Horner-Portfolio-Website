@@ -1,5 +1,6 @@
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
+import Carousel from "./Carousel";
 
 const Projects = () => {
   return (
@@ -11,13 +12,12 @@ const Projects = () => {
         <h1 className="text-3xl font-bold uppercase">
           <span className="text-green-500">Projects</span>
         </h1>
-        <p className="w-[90%] my-0 mx-auto py-4 px-0 text-sm sm:w-[28rem]">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-          doloremque voluptate excepturi porro sed totam quis animi dolorum
-          rerum earum.
+        <p className="w-[90%] my-0 mx-auto py-4 px-0 text-md sm:w-[28rem]">
+          Here are all my current and past projects, each includes information about
+          the project, and link(s) to where you can see it.
         </p>
       </Zoom>
-      <div></div>
+      <Carousel />
     </div>
   );
 };

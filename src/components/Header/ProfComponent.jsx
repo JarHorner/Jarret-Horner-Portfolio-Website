@@ -32,14 +32,14 @@ const ProfComponent = () => {
           <h3 className="font-medium text-xl pb-5 capitalize">
             Future Software Developer
           </h3>
-          <p className="font-light pb-12">
-            Always enthusiastic to learn
-            more about new technologies. Previously worked in an internship with
-            Alberta Health Services Personal Health Portal team, creating automation applications and QA
-            testing. In my past jobs, I have learned how to provide amazing
-            customer service, excellent team cooperation, and manage time
-            effectively. Passionate about the innovative world of technology and
-            the possibilities that come with it.
+          <p className="font-light pb-12 w-4/5">
+            Always enthusiastic to learn more about new technologies. Previously
+            worked in an internship with Alberta Health Services Personal Health
+            Portal team, performing Quality Assurance testing and creating an
+            automation application. In my past jobs, I have learned how to
+            provide amazing customer service, excellent team cooperation, and
+            manage time effectively. Passionate about the innovative world of
+            technology and the possibilities that come with it.
           </p>
           <a
             href="#portfolio"

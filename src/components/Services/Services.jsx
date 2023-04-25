@@ -1,15 +1,15 @@
 import React from "react";
-import { FaGamepad } from "react-icons/fa";
+import { FaBusinessTime } from "react-icons/fa";
 import { BsPhone } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import Card from "./Card";
-import { Slide } from "react-awesome-reveal";
+import { Slide, Zoom } from "react-awesome-reveal";
 
 const Services = () => {
   return (
     <div
       id="service"
-      className="w-[90%] max-w-screen-xl my-0 mx-auto py-12 px-0 md:w-4/5"
+      className="w-[90%] max-w-screen-xl mb-12 mx-auto py-12 px-0 md:w-4/5"
     >
       <Slide direction="down">
         <h4 className="text-xl">
@@ -20,26 +20,29 @@ const Services = () => {
       <div className="grid services-grid mt-16 gap-4">
         <Slide direction="left">
           <Card
-            Icon={FaGamepad}
-            title={"Game Developer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            Icon={FaBusinessTime}
+            title={"Business Tool Developer"}
+            disc={`I was in charge of developing a Selenium application for my Alberta Health Services team that would speed up QA testing of
+            our primary website. It took less than 5 minutes to use the application to test something that would have taken a tester 20 to 
+            30 minutes manually.`}
           />
         </Slide>
-        <Slide direction="down">
+        <Zoom>
           <Card
             Icon={CgWebsite}
-            title={"Web Designer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            title={"Web Developer"}
+            disc={`I have created numerous websites, for both personal study (like this one!) and university projects. The process of building
+            these websites has taught me a variety of skills in web development, including UI/UX design using modular and Tailwind CSS, using 
+            various libraries and APIs, and using both front and back-end frameworks like React & node.js`}
           />
-        </Slide>
+        </Zoom>
         <Slide direction="right">
           <Card
             Icon={BsPhone}
             title={"Application Developer"}
-            disc={`Lorem ipsum dolor sit amet consectetur 
-                        adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
+            disc={`I have created a variety of small applications, one of which is released on the Google Play Store! It is called Floppy Bat, 
+            a simple game that taught me how to create and finish an application using the Unity Engine, programming in C#, integrate ads into 
+            an app, and publish in a store.`}
           />
         </Slide>
       </div>

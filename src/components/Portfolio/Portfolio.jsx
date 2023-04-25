@@ -147,9 +147,6 @@ const Portfolio = () => {
               <AiOutlineArrowUp />
             </button>
           </Fade>
-          <Slide direction="left">
-            <p className="pt-8">Scoll to Top</p>
-          </Slide>
         </div>
       </div>
 

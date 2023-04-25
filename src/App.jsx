@@ -5,6 +5,7 @@ import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
 
+
 function App() {
   const headerCSS =
     "h-full pb-2 bg-gradient-to-l from-gray-500 via-gray-700 to-gray-900 sm:h-screen";

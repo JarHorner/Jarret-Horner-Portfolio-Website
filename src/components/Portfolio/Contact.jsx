@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { FiMail } from "react-icons/fi";
 import { Slide } from "react-awesome-reveal";
-import logo from "../../assets/gif/loading.gif";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   // for form inputs, used mainly to clear the from
@@ -15,10 +15,21 @@ const Contact = () => {
   // for button, to ensure button cannot be spammed, sending multiple messages
   const [buttonPressed, setButtonPressed] = useState(false);
 
-  const [loading, setLoading] = useState(false);
-
-  // determines state of the message, whether it is sent ok or there is an error
-  const [sent, setSent] = useState("");
+  // Toast message for the emailjs promise
+  const notify = (promise) =>
+    toast.promise(
+      promise,
+      {
+        loading: "Sending...",
+        success: "Message has been sent successfully!",
+        error: "Error while sending message",
+      },
+      {
+        style: {
+          minWidth: "250px",
+        },
+      }
+    );
 
   //values of emailjs from .env file
   const service_ID = import.meta.env.VITE_SERVICE_ID;
@@ -37,21 +48,23 @@ const Contact = () => {
     e.preventDefault();
 
     setButtonPressed(true);
-    setLoading(true);
+    const sendForm = emailjs.sendForm(
+      service_ID,
+      template_ID,
+      "#form",
+      public_Key
+    );
+    notify(sendForm);
 
-    emailjs.sendForm(service_ID, template_ID, "#form", public_Key).then(
+    sendForm.then(
       (result) => {
         console.log(result.text);
-        setSent("ok");
         resetForm();
         setButtonPressed(false);
-        setLoading(false);
       },
       (error) => {
         console.log(error.text);
-        setSent("error");
         setButtonPressed(false);
-        setLoading(false);
       }
     );
   };
@@ -63,31 +76,11 @@ const Contact = () => {
     setMessage("");
   };
 
-  // determines the message shown depending on the 'sent' state value
-  const emailMessage = () => {
-    switch (sent) {
-      case "ok": {
-        return (
-          <div className="mt-4">
-            <p>The message has successfully been sent!</p>
-          </div>
-        );
-      }
-      case "error": {
-        return (
-          <div className="mt-4">
-            <p>The message was unsuccessfull!</p>
-          </div>
-        );
-      }
-      default: {
-        break;
-      }
-    }
-  };
-
   return (
     <div className="flex-1">
+      <div>
+        <Toaster position="top-center" reverseOrder={false} />
+      </div>
       <Slide direction="right">
         <form
           id="form"
@@ -148,13 +141,7 @@ const Contact = () => {
             >
               Submit
             </button>
-            {emailMessage()}
           </div>
-          {loading ? (
-            <img src={logo} className="flex absolute left-1/3 bottom-1/3"></img>
-          ) : (
-            <img></img>
-          )}
         </form>
       </Slide>
     </div>
