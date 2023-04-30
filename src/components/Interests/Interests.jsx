@@ -1,5 +1,6 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
+import InterestsCarousel from "./InterestsCarousel";
 
 const Interests = () => {
   return (
@@ -13,6 +14,7 @@ const Interests = () => {
         </span>
         <h1 className="pt-4 text-4xl">What I Enjoy</h1>
       </Slide>
+      <InterestsCarousel />
     </div>
   );
 };

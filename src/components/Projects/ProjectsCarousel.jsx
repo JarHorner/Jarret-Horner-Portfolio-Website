@@ -17,10 +17,10 @@ import "swiper/css/pagination";
 // import required modules
 import { Keyboard, Navigation, Pagination } from "swiper";
 
-const Carousel = () => {
+const ProjectsCarousel = () => {
   const slideCSS = "bg-center bg-cover w-auto h-auto";
   const imgCSS =
-    "object-contain block bg-slate-900 w-[350px] h-[300px] sm:w-[550px] sm:h-[450px] md:w-[650px] md:h-[600px] lg:w-[750px] lg:h-[700px]";
+    "object-contain block bg-slate-800 w-[350px] h-[300px] sm:w-[550px] sm:h-[450px] md:w-[650px] md:h-[600px] lg:w-[750px] lg:h-[700px]";
   const textCSS = "text-sm w-[350px] sm:w-[550px] md:w-[650px] lg:w-[750px]";
   const h1CSS =
     "text-3xl absolute top-2 left-6 font-serif font-bold z-50 sm:top-8 sm:text-4xl md:left-12 md:text-5xl";
@@ -192,4 +192,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ProjectsCarousel;

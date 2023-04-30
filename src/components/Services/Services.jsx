@@ -27,7 +27,7 @@ const Services = () => {
             30 minutes manually.`}
           />
         </Slide>
-        <Zoom>
+        <Slide direction="up">
           <Card
             Icon={CgWebsite}
             title={"Web Developer"}
@@ -35,7 +35,7 @@ const Services = () => {
             these websites has taught me a variety of skills in web development, including UI/UX design using modular and Tailwind CSS, using 
             various libraries and APIs, and using both front and back-end frameworks like React & node.js`}
           />
-        </Zoom>
+        </Slide>
         <Slide direction="right">
           <Card
             Icon={BsPhone}
