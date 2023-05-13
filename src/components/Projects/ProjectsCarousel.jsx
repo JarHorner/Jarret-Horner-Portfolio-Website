@@ -83,6 +83,23 @@ const ProjectsCarousel = () => {
             </p>
           </SwiperSlide>
           <SwiperSlide className={slideCSS}>
+            <h1 className={h1CSS}>Mythic + Loot Table</h1>
+            <a
+              href="https://github.com/JarHorner/MythicPlusLootTable"
+              target="_blank"
+              className={Button1CSS}
+            >
+              GitHub Link
+            </a>
+            <img src={wordle} className={imgCSS}></img>
+            <p className={textCSS}>
+              This is an addon I am building for the MMORPG World of Warcraft.
+              Mythic + is a group activity and based on the difficulty, better
+              loot is given. There is no table in-game that tells you how
+              powerful the loot will be, so my addon does that.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>
               <a
                 href="https://web3moviebrowser.netlify.app/"
@@ -175,8 +192,18 @@ const ProjectsCarousel = () => {
             </p>
           </SwiperSlide>
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}><a href="https://myhealth.alberta.ca/" target="_blank" className="text-green-300 hover:text-green-600">Selenium QA Tester</a></h1>
-            <p className="absolute text-xs bottom-40 left-12 sm:text-lg sm:bottom-32 md:left-14 md:bottom-28">This was the website my appliction tested</p>
+            <h1 className={h1CSS}>
+              <a
+                href="https://myhealth.alberta.ca/"
+                target="_blank"
+                className="text-green-300 hover:text-green-600"
+              >
+                Selenium QA Tester
+              </a>
+            </h1>
+            <p className="absolute text-xs bottom-40 left-12 sm:text-lg sm:bottom-32 md:left-14 md:bottom-28">
+              This was the website my appliction tested
+            </p>
             <img src={selenium} className={imgCSS}></img>
             <p className={textCSS}>
               This was an application built using Selenium C# for Alberta Health
