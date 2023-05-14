@@ -7,6 +7,7 @@ import floppyBat from "../../assets/images/Floppy_Bat.jpg";
 import movieBrowser from "../../assets/images/Movie_Browser_Webpage.png";
 import wordle from "../../assets/images/Wordle.jpg";
 import zeldaGame from "../../assets/images/Zelda_Like_Game.png";
+import zipper from "../../assets/images/Zipper.png";
 import selenium from "../../assets/images/Selenium.png";
 
 // Import Swiper styles
@@ -83,23 +84,6 @@ const ProjectsCarousel = () => {
             </p>
           </SwiperSlide>
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Mythic + Loot Table</h1>
-            <a
-              href="https://github.com/JarHorner/MythicPlusLootTable"
-              target="_blank"
-              className={Button1CSS}
-            >
-              GitHub Link
-            </a>
-            <img src={wordle} className={imgCSS}></img>
-            <p className={textCSS}>
-              This is an addon I am building for the MMORPG World of Warcraft.
-              Mythic + is a group activity and based on the difficulty, better
-              loot is given. There is no table in-game that tells you how
-              powerful the loot will be, so my addon does that.
-            </p>
-          </SwiperSlide>
-          <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>
               <a
                 href="https://web3moviebrowser.netlify.app/"
@@ -133,6 +117,23 @@ const ProjectsCarousel = () => {
             </p>
           </SwiperSlide>
           <SwiperSlide className={slideCSS}>
+            <h1 className={h1CSS}>Mythic + Loot Table</h1>
+            <a
+              href="https://github.com/JarHorner/MythicPlusLootTable"
+              target="_blank"
+              className={Button1CSS}
+            >
+              GitHub Link
+            </a>
+            <img className={imgCSS}></img>
+            <p className={textCSS}>
+              An addon I am building for the MMORPG World of Warcraft. Mythic +
+              is a group activity and based on the difficulty, better loot is
+              given. There is no table in-game that tells you how powerful the
+              loot will be, so my addon does that.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Zelda-like Game</h1>
             <a
               href="https://github.com/JarHorner/Zelda-Like-Game"
@@ -147,6 +148,23 @@ const ProjectsCarousel = () => {
               finalized name yet, but its gameplay will be reminiscent of older
               Legend of Zelda games. It is being build using using Unity, in C#.
               All the pixel art in the game will all be made my me as well.
+            </p>
+          </SwiperSlide>
+          <SwiperSlide className={slideCSS}>
+            <h1 className={h1CSS}>Zipper</h1>
+            <a
+              href="https://github.com/JarHorner/Zipper"
+              target="_blank"
+              className={Button1CSS}
+            >
+              GitHub Link
+            </a>
+            <img src={zipper} className={imgCSS}></img>
+            <p className={textCSS}>
+              A simple application that zips and unzips files and is built using
+              JavaFX, a client application platform for desktop, mobile and
+              embedded systems built on Java. I also used Maven to manage the
+              projects build and learn a project management tool.
             </p>
           </SwiperSlide>
           <SwiperSlide className={slideCSS}>
