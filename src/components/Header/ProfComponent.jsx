@@ -5,6 +5,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 
+import profilePicture from "../../assets/images/Profile_Picture.png"
+
 const ProfComponent = () => {
   const spanCSS =
     "w-10 h-9 relative bg-green-500 clip-icons ease-in-out-transform hover:rotate ";
@@ -94,8 +96,8 @@ const ProfComponent = () => {
       <Slide direction="right">
         <div className="custom-shadow ease-in-out-transform hover:translate-y-10 hover:hover-custom-shadow w-full sm:w-80 md:w-96">
           <img
-            src="https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png"
-            alt="profile picture"
+          src={profilePicture}
+          alt="profile picture"
           />
         </div>
       </Slide>
