@@ -3,7 +3,7 @@ import React from "react";
 const HorizontalImageContainer = ({ image }) => {
   return (
     <div className="flex items-center justify-center">
-      <div className="w-[90%] p-2 mt-12">
+      <div className="w-[90%] p-2 mt-8">
         <img src={image} alt={`Image ${image}`} className="w-full h-auto" />
       </div>
     </div>

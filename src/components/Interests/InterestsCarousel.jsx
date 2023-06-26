@@ -30,7 +30,7 @@ const InterestsCarousel = () => {
     "absolute text-sm bottom-4 left-6 sm:left-10 md:left-16 md:bottom-8 md:text-lg";
 
   return (
-    <div className="">
+    <div className="mt-6">
       <Slide direction="right">
         <Swiper
           effect={"cards"}
