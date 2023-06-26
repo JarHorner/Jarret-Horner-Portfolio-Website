@@ -17,7 +17,7 @@ const Services = () => {
         </h4>
         <h1 className="pt-4 text-4xl">What I Do</h1>
       </Slide>
-      <div className="grid services-grid mt-16 gap-4">
+      <div className="grid services-grid mt-12 gap-4">
         <Slide direction="left">
           <Card
             Icon={FaBusinessTime}
@@ -27,7 +27,7 @@ const Services = () => {
             30 minutes manually.`}
           />
         </Slide>
-        <Slide direction="up">
+        <Slide direction="up" >
           <Card
             Icon={CgWebsite}
             title={"Web Developer"}
