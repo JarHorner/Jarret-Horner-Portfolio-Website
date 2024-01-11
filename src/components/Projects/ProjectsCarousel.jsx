@@ -1,16 +1,17 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Project from "./Project";
 
 // importing images
 import movieBrowser from "../../assets/images/Movie_Browser_Webpage.png";
-import lootTable from "../../assets/images/Loot_Table.png"
+import lootTable from "../../assets/images/Loot_Table.png";
 import floppyBat from "../../assets/images/Floppy_Bat.png";
+import mysticalCatDash from "../../assets/images/Mystical_Cat_Dash.png";
 import wordle from "../../assets/images/Wordle.png";
 import zeldaGame from "../../assets/images/Zelda_Like_Game.png";
 import zipper from "../../assets/images/Zipper.png";
 import selenium from "../../assets/images/Selenium.png";
-import reactNative from "../../assets/images/React_Native.png"
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,10 +25,10 @@ import {
   VerticalImageContainer,
 } from "../Helpers/ImageContainer";
 
-const TestCarousel = () => {
+const ProjectsCarousel = () => {
   const slideCSS =
-    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto ";
-  const textCSS = "text-sm w-[350px] sm:w-[550px] md:w-[850px]";
+    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto";
+  const textCSS = "text-sm w-[350px] sm:w-[450px] lg:w-[600px] xl:w-[800px]";
   const h1CSS = "text-3xl font-serif font-bold z-50 sm:text-4xl md:text-5xl";
   const Button1CSS =
     "cursor-pointer bg-green-600 font-medium text-sm mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 bottom-40 left-12 sm:bottom-24 sm:px-6 sm:py-2.5 md:left-14 md:px-8 md:py-3 ";
@@ -57,6 +58,7 @@ const TestCarousel = () => {
               <a
                 href="https://web3moviebrowser.netlify.app/"
                 target="_blank"
+                title="Link to Website"
                 className="text-green-300 hover:text-green-600"
               >
                 Movie Browser
@@ -135,6 +137,28 @@ const TestCarousel = () => {
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
+            <h1 className={h1CSS}>Mystical Cat Dash</h1>
+            <HorizontalImageContainer image={mysticalCatDash} />
+            <p className={textCSS}>
+              Mystical Cat Dash is an 3D endless runner game with 2D
+              arcane-style "Flappy bird" sections. thought the idea of a game
+              featuring gameplay of popular mobile games we played as teenagers
+              was fun. It started off as a project for my game development class
+              in university, and I expanded upon the concept, increasing its
+              depth. We thought the idea of a game featuring gameplay of popular
+              mobile games we played as teenagers was fun. It was also my first
+              time working with 3D.
+            </p>
+            <a
+              href="https://jarhorner.itch.io/mystical-cat-dash"
+              target="_blank"
+              className={Button1CSS}
+            >
+              itch.io Link
+            </a>
+          </SwiperSlide>
+
+          <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Zipper</h1>
             <HorizontalImageContainer image={zipper} />
             <p className={textCSS}>
@@ -201,8 +225,8 @@ const TestCarousel = () => {
             <HorizontalImageContainer image={selenium} />
             <p className={textCSS}>
               This was an application built using Selenium C# for Alberta Health
-              Services, testing this website. I built it from a QA requirements list,
-              and the application ran though each point, testing if page
+              Services, testing this website. I built it from a QA requirements
+              list, and the application ran though each point, testing if page
               elements and information were correct, and links worked. New tests
               could also easily be added for future use.
             </p>
@@ -235,19 +259,10 @@ const TestCarousel = () => {
               </a>
             </div>
           </SwiperSlide> */}
-
-          <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Coming Soon...</h1>
-            <HorizontalImageContainer image={reactNative} />
-            <h2 className="text-xl">
-              A finance/budget application built using React Native CLI
-            </h2>
-          </SwiperSlide>
-
         </Swiper>
       </Slide>
     </div>
   );
 };
 
-export default TestCarousel;
+export default ProjectsCarousel;
