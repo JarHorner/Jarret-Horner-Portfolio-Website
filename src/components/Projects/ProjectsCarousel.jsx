@@ -27,8 +27,9 @@ import {
 
 const ProjectsCarousel = () => {
   const slideCSS =
-    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto"
-  const textCSS = "text-sm w-[350px] sm:w-[450px] lg:w-[600px] xl:w-[800px] relative translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[-40px] ";
+    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto";
+  const textCSS =
+    "text-sm w-[350px] sm:w-[450px] lg:w-[600px] xl:w-[800px] relative translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[-40px] ";
   const h1CSS = "text-3xl font-serif font-bold z-50 sm:text-4xl md:text-5xl ";
   const Button1CSS =
     "cursor-pointer bg-green-600 font-medium text-sm mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 sm:px-6 sm:py-2.5 md:px-8 md:py-3 fixed translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[40px]";
@@ -54,228 +55,137 @@ const ProjectsCarousel = () => {
           className="w-full pt-4 pb-12"
         >
           <SwiperSlide className={slideCSS}>
-            <div className="">
-              <h1 className={h1CSS}>Floppy Bat</h1>
-              <HorizontalImageContainer image={floppyBat} />
-              <p className={textCSS}>
-                Floppy Bat is a simple, easy-to-play, and control game. I wanted
-                the experience of publishing an application, so i built a simple
-                game based on Flappy Bird. I learned a lot about developing and
-                polishing an app ready for a store and built it using Unity, in
-                C#.
-              </p>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.FrydayGames.FloppyBat"
-                target="_blank"
-                className={Button1CSS}
-              >
-                Store Link
-              </a>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>
-              <a
-                href="https://web3moviebrowser.netlify.app/"
-                target="_blank"
-                title="Link to Website"
-                className="text-green-300 hover:text-green-600"
-              >
-                Movie Browser
-              </a>
-            </h1>
-            <HorizontalImageContainer image={movieBrowser} />
-            <p className={textCSS}>
-              A movie browser website I built for one of my University projects
+            <Project
+              name="Movie Browser"
+              verticalImage={false}
+              image={movieBrowser}
+              text="A movie browser website I built for one of my University projects
               with a friend. It is a single-page website built using react.js
               that searches though movies and provides info. The API it uses
-              contains dummy movie data and was also made by us, using node.js.
-            </p>
-            <a
-              href="https://github.com/JarHorner/Web3-Movie-Browser"
-              target="_blank"
-              className={Button1CSS}
-            >
-              GitHub Link
-            </a>
-            <a
-              href="https://github.com/JarHorner/Web3-Movie-Browser-API"
-              target="_blank"
-              className={Button2CSS}
-            >
-              API GitHub Link
-            </a>
+              contains dummy movie data and was also made by us, using node.js."
+              hasButton2={true}
+              button1Name="Webpage Link"
+              button1Link="https://web3moviebrowser.netlify.app/"
+              button2Name="GitHub Link"
+              button2Link="https://github.com/JarHorner/Web3-Movie-Browser"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Mythic Plus Loot Table</h1>
-            <HorizontalImageContainer image={lootTable} />
-            <p className={textCSS}>
-              An addon I have built and released on CurseForge for the MMORPG
+            <Project
+              name="Mythic Plus Loot Table"
+              verticalImage={false}
+              image={lootTable}
+              text="An addon I have built and released on CurseForge for the MMORPG
               World of Warcraft. Mythic plus is a group activity and based on
               the difficulty, better equipment is given. There is no table
               in-game that tells you how good the equipment will be, so my addon
-              provides that, and more.
-            </p>
-            <a
-              href="https://www.curseforge.com/wow/addons/mythicplusloottable"
-              target="_blank"
-              className={Button1CSS}
-            >
-              CurseForge Link
-            </a>
-            <a
-              href="https://github.com/JarHorner/MythicPlusLootTable"
-              target="_blank"
-              className={Button2CSS}
-            >
-              GitHub Link
-            </a>
+              provides that, and more."
+              hasButton2={true}
+              button1Name="Curse Forge Link"
+              button1Link="https://www.curseforge.com/wow/addons/mythicplusloottable"
+              button2Name="GitHub Link"
+              button2Link="https://github.com/JarHorner/MythicPlusLootTable"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Floppy Bat</h1>
-            <HorizontalImageContainer image={floppyBat} />
-            <p className={textCSS}>
-              Floppy Bat is a simple, easy-to-play, and control game. I wanted
+            <Project
+              name="Floppy Bat"
+              verticalImage={false}
+              image={floppyBat}
+              text="Floppy Bat is a simple, easy-to-play, and control game. I wanted
               the experience of publishing an application, so i built a simple
               game based on Flappy Bird. I learned a lot about developing and
               polishing an app ready for a store and built it using Unity, in
-              C#.
-            </p>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.FrydayGames.FloppyBat"
-              target="_blank"
-              className={Button1CSS}
-            >
-              Store Link
-            </a>
+              C#."
+              hasButton2={false}
+              button1Name="Store Link"
+              button1Link="https://play.google.com/store/apps/details?id=com.FrydayGames.FloppyBat"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Mystical Cat Dash</h1>
-            <HorizontalImageContainer image={mysticalCatDash} />
-            <p className={textCSS}>
-              Mystical Cat Dash is an 3D endless runner game with 2D
-              arcane-style "Flappy bird" sections. thought the idea of a game
+            <Project
+              name="Mystical Cat Dash"
+              verticalImage={false}
+              image={mysticalCatDash}
+              text="Mystical Cat Dash is an 3D endless runner game with 2D
+              arcane-style 'Flappy bird' sections. thought the idea of a game
               featuring gameplay of popular mobile games we played as teenagers
               was fun. It started off as a project for my game development class
               in university, and I expanded upon the concept, increasing its
               depth. We thought the idea of a game featuring gameplay of popular
               mobile games we played as teenagers was fun. It was also my first
-              time working with 3D.
-            </p>
-            <a
-              href="https://jarhorner.itch.io/mystical-cat-dash"
-              target="_blank"
-              className={Button1CSS}
-            >
-              itch.io Link
-            </a>
+              time working with 3D."
+              hasButton2={true}
+              button1Name="itch.io Link"
+              button1Link="https://jarhorner.itch.io/mystical-cat-dash"
+              button2Name="GitHub Link"
+              button2Link="https://github.com/JarHorner/Mystical-Cat-Dash"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Zipper</h1>
-            <HorizontalImageContainer image={zipper} />
-            <p className={textCSS}>
-              A simple application that zips and unzips files and is built using
+            <Project
+              name="Zipper"
+              verticalImage={false}
+              image={zipper}
+              text="A simple application that zips and unzips files and is built using
               JavaFX, a client application platform for desktop, mobile and
               embedded systems built on Java. I also used Maven to manage the
-              projects build and learn a project management tool.
-            </p>
-            <a
-              href="https://github.com/JarHorner/Zipper"
-              target="_blank"
-              className={Button1CSS}
-            >
-              GitHub Link
-            </a>
+              projects build and learn a project management tool."
+              hasButton2={false}
+              button1Name="GitHub Link"
+              button1Link="https://github.com/JarHorner/Zipper"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Wordle+</h1>
-            <VerticalImageContainer image={wordle} />
-            <p className={textCSS}>
-              Wordle+ was an application I started creating when Wordle became a
+            <Project
+              name="Wordle+"
+              verticalImage={true}
+              image={wordle}
+              text="Wordle+ was an application I started creating when Wordle became a
               phenomenon. The application works and plays like regular Wordle,
               but I never polished or released it. I built it using Unity, in
-              C#.
-            </p>
-            <a
-              href="https://github.com/JarHorner/Wordle_Clone"
-              target="_blank"
-              className={Button1CSS}
-            >
-              GitHub Link
-            </a>
+              C#."
+              hasButton2={false}
+              button1Name="GitHub Link"
+              button1Link="https://github.com/JarHorner/Wordle_Clone"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>Zelda-like Game</h1>
-            <HorizontalImageContainer image={zeldaGame} />
-            <p className={textCSS}>
-              This game is a passion project of mine that does not have a
+            <Project
+              name="Stanger Lands"
+              verticalImage={false}
+              image={zeldaGame}
+              text="This game is a passion project of mine that does not have a
               finalized name yet, but its gameplay will be reminiscent of older
               Legend of Zelda games. It is being build using using Unity, in C#.
-              All the pixel art in the game will all be made my me as well.
-            </p>
-            <a
-              href="https://github.com/JarHorner/Zelda-Like-Game"
-              target="_blank"
-              className={Button1CSS}
-            >
-              GitHub Link
-            </a>
+              All the pixel art in the game will all be made my me as well."
+              hasButton2={false}
+              button1Name="GitHub Link"
+              button1Link="https://github.com/JarHorner/Zelda-Like-Game"
+            />
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>
-              <a
-                href="https://myhealth.alberta.ca/"
-                target="_blank"
-                className="text-green-300 hover:text-green-600"
-              >
-                Selenium QA Tester
-              </a>
-            </h1>
-            <HorizontalImageContainer image={selenium} />
-            <p className={textCSS}>
-              This was an application built using Selenium C# for Alberta Health
+            <Project
+              name="Selenium QA Tester"
+              verticalImage={false}
+              image={selenium}
+              text="This was an application built using Selenium C# for Alberta Health
               Services, testing this website. I built it from a QA requirements
               list, and the application ran though each point, testing if page
               elements and information were correct, and links worked. New tests
-              could also easily be added for future use.
-            </p>
+              could also easily be added for future use."
+              hasButton2={false}
+              button1Name="Website Link"
+              button1Link="https://myhealth.alberta.ca/"
+            />
           </SwiperSlide>
-
-          {/* <SwiperSlide className={slideCSS}>
-            <h1 className={h1CSS}>University Program</h1>
-            <HorizontalImageContainer image={null} />
-            <p className={textCSS}>
-              The university program website was built for one of my University
-              projects with a group of 5. It was built using react.js for the
-              front-end and node.js for the back-end. It is a tool used by a
-              student studying abroad in Canada, to see what programs or club
-              they may be able to join based on their interests and grades.
-            </p>
-            <div className="flex">
-              <a
-                href="https://github.com/JarHorner/Web3-Movie-Browser"
-                target="_blank"
-                className={Button1CSS}
-              >
-                GitHub Link
-              </a>
-              <a
-                href="https://github.com/JarHorner/Web3-Movie-Browser-API"
-                target="_blank"
-                className={Button2CSS}
-              >
-                API GitHub Link
-              </a>
-            </div>
-          </SwiperSlide> */}
         </Swiper>
       </Slide>
     </div>
