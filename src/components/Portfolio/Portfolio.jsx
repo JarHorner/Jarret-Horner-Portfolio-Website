@@ -34,27 +34,7 @@ const Portfolio = () => {
           </h1>
         </Slide>
 
-        <div className="py-4 px-0">
-          <Slide direction="left">
-            <h1 className="text-xl mb-2">Address:</h1>
-          </Slide>
-          <div className="flex items-center gap-2">
-            <Slide direction="left">
-              <span>
-                <BsMap />
-              </span>
-              <a
-                target="_blank"
-                href="http://maps.google.com/?q=108A-5332 Lakeview Dr SW, Calgary, AB, T3E 5R9"
-                className="w-full pt-2 sm:w-1/2 text-green-300 hover:text-green-600"
-              >
-                108A-5332 Lakeview Dr SW, Calgary, Alberta, T3E 5R9
-              </a>
-            </Slide>
-          </div>
-        </div>
-
-        <div className="">
+        <div className="mt-16">
           <Slide direction="left">
             <h1 className="text-xl mb-2">Contact me directly:</h1>
           </Slide>

@@ -27,13 +27,13 @@ import {
 
 const ProjectsCarousel = () => {
   const slideCSS =
-    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto";
-  const textCSS = "text-sm w-[350px] sm:w-[450px] lg:w-[600px] xl:w-[800px]";
-  const h1CSS = "text-3xl font-serif font-bold z-50 sm:text-4xl md:text-5xl";
+    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto"
+  const textCSS = "text-sm w-[350px] sm:w-[450px] lg:w-[600px] xl:w-[800px] relative translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[-40px] ";
+  const h1CSS = "text-3xl font-serif font-bold z-50 sm:text-4xl md:text-5xl ";
   const Button1CSS =
-    "cursor-pointer bg-green-600 font-medium text-sm mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 bottom-40 left-12 sm:bottom-24 sm:px-6 sm:py-2.5 md:left-14 md:px-8 md:py-3 ";
+    "cursor-pointer bg-green-600 font-medium text-sm mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 sm:px-6 sm:py-2.5 md:px-8 md:py-3 fixed translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[40px]";
   const Button2CSS =
-    "cursor-pointer bg-green-600 font-medium text-sm ml-32 mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 bottom-40 right-12 sm:bottom-24 sm:px-6 sm:py-2.5 md:right-14 md:px-8 md:py-3";
+    "cursor-pointer bg-green-600 font-medium text-sm mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 sm:px-6 sm:py-2.5 md:px-8 md:py-3 fixed translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[-20px]";
 
   return (
     <div className="">
@@ -54,6 +54,27 @@ const ProjectsCarousel = () => {
           className="w-full pt-4 pb-12"
         >
           <SwiperSlide className={slideCSS}>
+            <div className="">
+              <h1 className={h1CSS}>Floppy Bat</h1>
+              <HorizontalImageContainer image={floppyBat} />
+              <p className={textCSS}>
+                Floppy Bat is a simple, easy-to-play, and control game. I wanted
+                the experience of publishing an application, so i built a simple
+                game based on Flappy Bird. I learned a lot about developing and
+                polishing an app ready for a store and built it using Unity, in
+                C#.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.FrydayGames.FloppyBat"
+                target="_blank"
+                className={Button1CSS}
+              >
+                Store Link
+              </a>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>
               <a
                 href="https://web3moviebrowser.netlify.app/"
@@ -71,22 +92,20 @@ const ProjectsCarousel = () => {
               that searches though movies and provides info. The API it uses
               contains dummy movie data and was also made by us, using node.js.
             </p>
-            <div className="flex">
-              <a
-                href="https://github.com/JarHorner/Web3-Movie-Browser"
-                target="_blank"
-                className={Button1CSS}
-              >
-                GitHub Link
-              </a>
-              <a
-                href="https://github.com/JarHorner/Web3-Movie-Browser-API"
-                target="_blank"
-                className={Button2CSS}
-              >
-                API GitHub Link
-              </a>
-            </div>
+            <a
+              href="https://github.com/JarHorner/Web3-Movie-Browser"
+              target="_blank"
+              className={Button1CSS}
+            >
+              GitHub Link
+            </a>
+            <a
+              href="https://github.com/JarHorner/Web3-Movie-Browser-API"
+              target="_blank"
+              className={Button2CSS}
+            >
+              API GitHub Link
+            </a>
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>
@@ -99,22 +118,20 @@ const ProjectsCarousel = () => {
               in-game that tells you how good the equipment will be, so my addon
               provides that, and more.
             </p>
-            <div className="flex">
-              <a
-                href="https://www.curseforge.com/wow/addons/mythicplusloottable"
-                target="_blank"
-                className={Button1CSS}
-              >
-                CurseForge Link
-              </a>
-              <a
-                href="https://github.com/JarHorner/MythicPlusLootTable"
-                target="_blank"
-                className={Button2CSS}
-              >
-                GitHub Link
-              </a>
-            </div>
+            <a
+              href="https://www.curseforge.com/wow/addons/mythicplusloottable"
+              target="_blank"
+              className={Button1CSS}
+            >
+              CurseForge Link
+            </a>
+            <a
+              href="https://github.com/JarHorner/MythicPlusLootTable"
+              target="_blank"
+              className={Button2CSS}
+            >
+              GitHub Link
+            </a>
           </SwiperSlide>
 
           <SwiperSlide className={slideCSS}>

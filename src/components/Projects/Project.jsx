@@ -18,12 +18,10 @@ const Project = (props) => {
     "cursor-pointer bg-green-600 font-medium text-sm ml-32 mt-4 custom-shadow hover:hover-custom-shadow px-2 py-1 bottom-40 right-12 sm:bottom-24 sm:px-6 sm:py-2.5 md:right-14 md:px-8 md:py-3";
 
   return (
-    <div>
+    <SwiperSlide className={slideCSS}>
       <h1 className={h1CSS}>{name}</h1>
       <HorizontalImageContainer image={image} />
-      <p className={textCSS}>
-        {text}
-      </p>
+      <p className={textCSS}>{text}</p>
       <a
         href="https://play.google.com/store/apps/details?id=com.FrydayGames.FloppyBat"
         target="_blank"
@@ -31,7 +29,7 @@ const Project = (props) => {
       >
         Store Link
       </a>
-      </div>
+    </SwiperSlide>
   );
 };
 
