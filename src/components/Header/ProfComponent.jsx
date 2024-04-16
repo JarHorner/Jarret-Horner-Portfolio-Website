@@ -5,11 +5,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 
-import profilePicture from "../../assets/images/Profile_Picture.png"
+import profilePicture from "../../assets/images/Profile_Picture.jpg"
 
 const ProfComponent = () => {
   const spanCSS =
-    "w-10 h-9 relative bg-green-500 clip-icons ease-in-out-transform hover:rotate ";
+    "w-12 h-10 relative bg-green-500 clip-icons ease-in-out-transform hover:rotate ";
   const aCSS =
     "text-white absolute top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2 ";
 
@@ -25,39 +25,41 @@ const ProfComponent = () => {
           <h4 className="py-4 px-0 font-medium">
             Hello! <span className="">My name is</span>
           </h4>
-          <h1 className="text-4xl tracking-wide pb-1 font-serif text-green-500">
+          <h1 className="text-5xl tracking-wide pb-2 font-serif text-green-500">
             Jarret Horner
           </h1>
           <h3 className="font-medium text-xl capitalize">
-            4th year CIS Student &
+            Bachelor of Computer Information Systems Graduate
           </h3>
           <h3 className="font-medium text-xl pb-5 capitalize">
-            Future Software Developer
+            & Future Software Developer
           </h3>
-          <p className="font-light pb-12 w-4/5">
+          <p className="font-light pb-16 w-4/5">
             Always enthusiastic to learn more about new technologies. Previously
             worked in an internship with Alberta Health Services Personal Health
             Portal team, performing Quality Assurance testing and creating an
-            automation application. In my past jobs, I have learned how to
-            provide amazing customer service, excellent team cooperation, and
-            manage time effectively. Passionate about the innovative world of
+            automation application to streamline their QA processes. In my past jobs, 
+            I have learned how to provide amazing customer service, excellent team cooperation, and
+            manage time effectively. I am passionate about the innovative world of
             technology and the possibilities that come with it.
           </p>
           <a
             href="#portfolio"
-            className="px-8 py-2.5 mt-12 cursor-pointer bg-green-600 text-white font-medium 
-                        custom-shadow hover:hover-custom-shadow"
+            className="px-12 py-4 mt-12 cursor-pointer bg-green-600 text-white font-medium 
+                        custom-shadow hover:hover-custom-shadow text-xl"
           >
             Let's talk
           </a>
-          <div className="mt-12 flex items-center gap-4">
-            <p className="text-base sm:text-sm">Check out my</p>
+          <div className="mt-20 flex items-center gap-8">
+            <p className="text-xl">Check out my</p>
             <div className="flex items-center gap-4">
               <span className={spanCSS}>
                 <a
                   className={aCSS}
                   href="https://github.com/JarHorner"
                   target="_blank"
+                  alt="GitHub"
+                  Title="GitHub"
                 >
                   <AiFillGithub />
                 </a>
@@ -67,6 +69,8 @@ const ProfComponent = () => {
                   className={aCSS}
                   href="https://www.linkedin.com/in/jarrethorner/"
                   target="_blank"
+                  alt="LinkedIn"
+                  Title="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -76,6 +80,8 @@ const ProfComponent = () => {
                   className={aCSS}
                   href="https://www.instagram.com/jarret_horner11/"
                   target="_blank"
+                  alt="Instagram"
+                  Title="Instagram"
                 >
                   <AiOutlineInstagram />
                 </a>
@@ -85,6 +91,8 @@ const ProfComponent = () => {
                   className={aCSS}
                   href="https://www.facebook.com/jarret.horner/"
                   target="_blank"
+                  alt="Facebook"
+                  Title="Facebook"
                 >
                   <BsFacebook />
                 </a>
@@ -94,7 +102,7 @@ const ProfComponent = () => {
         </div>
       </Slide>
       <Slide direction="right">
-        <div className="custom-shadow ease-in-out-transform hover:translate-y-10 hover:hover-custom-shadow w-full sm:w-80 md:w-96">
+        <div className="custom-shadow ease-in-out-transform hover:translate-y-10 hover:hover-custom-shadow w-full">
           <img
           src={profilePicture}
           alt="profile picture"
