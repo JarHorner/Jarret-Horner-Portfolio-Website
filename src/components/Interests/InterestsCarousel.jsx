@@ -3,12 +3,12 @@ import { Slide } from "react-awesome-reveal";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // importing images
-import PS5 from "../../assets/images/PS5.jpg";
-import DandD from "../../assets/images/DandD.jpg";
-import Unity from "../../assets/images/Unity.jpg";
-import Animals from "../../assets/images/Animals.jpg";
-import ATVing from "../../assets/images/ATVing.jpg";
-import Swimming from "../../assets/images/Swimming.jpg";
+import PS5 from "../../assets/images/interests/PS5.jpg";
+import DandD from "../../assets/images/interests/DandD.jpg";
+import Unity from "../../assets/images/interests/Unity.jpg";
+import Animals from "../../assets/images/interests/Animals.jpg";
+import ATVing from "../../assets/images/interests/ATVing.jpg";
+import Swimming from "../../assets/images/interests/Swimming.jpg";
 
 // Import Swiper styles
 import "swiper/css";

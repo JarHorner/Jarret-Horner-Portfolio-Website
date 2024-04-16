@@ -1,13 +1,11 @@
 import React from "react";
 import {
-  HorizontalImageContainer,
-  VerticalImageContainer,
+  HorizontalImageContainer
 } from "../Helpers/ImageContainer";
 
 const Project = (props) => {
   const {
     name,
-    verticalImage,
     image,
     text,
     hasButton2,
@@ -30,19 +28,19 @@ const Project = (props) => {
   return (
     <div className={slideCSS}>
       <h1 className={h1CSS}>{name}</h1>
-      { verticalImage ? (<VerticalImageContainer image={image}/>) : (<HorizontalImageContainer image={image}/> ) }
+      <HorizontalImageContainer image={image} />
 
       <p className={textCSS}>{text}</p>
-      <a href={button1Link} target="_blank" className={Button1CSS}>
-        {button1Name}
-      </a>
-      {hasButton2 ? (
-        <a href={button2Link} target="_blank" className={Button2CSS}>
-          {button2Name}
+        <a href={button1Link} target="_blank" className={Button1CSS}>
+          {button1Name}
         </a>
-      ) : (
-        <a></a>
-      )}
+        {hasButton2 ? (
+          <a href={button2Link} target="_blank" className={Button2CSS}>
+            {button2Name}
+          </a>
+        ) : (
+          <a></a>
+        )}
     </div>
   );
 };

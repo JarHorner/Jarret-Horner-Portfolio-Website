@@ -12,7 +12,7 @@ const Card = (props) => {
       <span className="text-6xl text-green-500 pb-2">
         <Icon />
       </span>
-      <h1 className="text-xl pb-4">{title}</h1>
+      <h1 className="text-2xl pb-4">{title}</h1>
       <p className="text-sm">{disc}</p>
     </div>
   );

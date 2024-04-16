@@ -77,7 +77,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex-1">
+    <div className="flex-1 mb-8">
       <div>
         <Toaster position="top-center" reverseOrder={false} />
       </div>

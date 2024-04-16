@@ -1,7 +1,6 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import ProjectsCarousel from "./ProjectsCarousel";
-import Swiper from "swiper";
 
 const Projects = () => {
   return (
@@ -14,8 +13,8 @@ const Projects = () => {
           <span className="text-green-500">Projects</span>
         </h1>
         <p className="w-[90%] my-0 mx-auto py-4 px-0 text-md sm:w-[28rem]">
-          Here are all my current and past projects, each includes information about
-          the project, and link(s) to where you can see it.
+          Here are all my current and past projects, including information about
+          the project, and links to where you can see it.
         </p>
       </Slide>
       <ProjectsCarousel />

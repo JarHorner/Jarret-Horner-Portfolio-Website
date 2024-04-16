@@ -11,23 +11,23 @@ const Services = () => {
       id="service"
       className="w-[90%] max-w-screen-xl mb-12 mx-auto py-12 px-0 md:w-4/5"
     >
-      <Slide direction="down">
+      <Slide direction="right">
         <h4 className="text-xl">
           <span className="text-green-500 font-bold uppercase">services</span>
         </h4>
         <h1 className="pt-4 text-4xl">What I Do</h1>
       </Slide>
       <div className="grid services-grid mt-12 gap-4">
-        <Slide direction="left">
+        <Slide direction="right">
           <Card
             Icon={FaBusinessTime}
             title={"Business Tool Developer"}
             disc={`I was in charge of developing a Selenium application for my Alberta Health Services team that would speed up QA testing of
-            our primary website. It took less than 5 minutes to use the application to test something that would have taken a tester 20 to 
+            the MyHealth Alberta website. It took less than 5 minutes to use the application to test multiple cases that usually take a tester 20 to 
             30 minutes manually.`}
           />
         </Slide>
-        <Slide direction="up" >
+        <Slide direction="right" >
           <Card
             Icon={CgWebsite}
             title={"Web Developer"}

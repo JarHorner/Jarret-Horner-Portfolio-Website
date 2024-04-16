@@ -119,7 +119,7 @@ const Portfolio = () => {
         </div>
 
         <div className="flex items-center gap-2 absolute right-12 top-64 sm:relative sm:right-0 sm:top-0">
-          <Fade>
+          <Fade className="mt-24">
             <button
               onClick={scrollUp}
               className="cursor-pointer w-8 h-8 bg-green-500 flex items-center justify-center text-3xl mt-8 hover:bg-green-600"
