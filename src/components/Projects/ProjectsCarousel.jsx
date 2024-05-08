@@ -68,7 +68,7 @@ const ProjectsCarousel = () => {
               will be depending on the difficulty of the dungeon, so my addon provides that, and more.
               It currently has over 8500 downloads!"
               hasButton2={true}
-              button1Name="Curse Forge Link"
+              button1Name="CurseForge Link"
               button1Link="https://www.curseforge.com/wow/addons/mythicplusloottable"
               button2Name="GitHub Link"
               button2Link="https://github.com/JarHorner/MythicPlusLootTable"

@@ -14,14 +14,14 @@ const Project = (props) => {
   } = props;
 
   const slideCSS =
-    "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto";
+    "flex flex-col items-center bg-center bg-cover h-auto mx-auto";
   const textCSS =
-    "text-sm pt-4 w-[350px] sm:w-[450px] lg:w-[600px] xl:w-[800px] relative translate-x-[-50%] translate-y-[-50%] left-[50%] bottom-[-40px] ";
+    "text-xs pt-4 w-[275px] sm:w-[450px] md:w-[500px] md:text-sm lg:w-[650px] xl:w-[800px] 2xl:w-[900px]";
   const h1CSS = "text-3xl font-serif font-bold z-50 sm:text-4xl md:text-5xl ";
   const Button1CSS =
-    "cursor-pointer bg-green-600 font-medium mt-6 text-sm custom-shadow hover:hover-custom-shadow px-2 py-1 sm:px-6 sm:py-2.5 sm:text-base";
+    "cursor-pointer bg-green-600 font-medium content-center mt-6 text-sm custom-shadow hover:hover-custom-shadow w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] sm:text-base";
   const Button2CSS =
-    "cursor-pointer bg-green-600 font-medium mt-6 text-sm custom-shadow hover:hover-custom-shadow px-2 py-1 sm:px-6 sm:py-2.5 sm:text-base";
+    "cursor-pointer bg-green-600 font-medium content-center mt-6 text-sm custom-shadow hover:hover-custom-shadow w-[120px] h-[40px] sm:w-[150px] sm:h-[50px] sm:text-base";
 
   return (
     <div className={slideCSS}>
@@ -29,8 +29,9 @@ const Project = (props) => {
       <ImageContainer image={image} />
 
       <p className={textCSS}>{text}</p>
+
       {hasButton2 ? (
-        <div className="flex flex-row gap-x-16 p-4 sm:gap-x-24 md:gap-x-48">
+        <div className="flex flex-row gap-x-8 p-4 sm:gap-x-24 md:gap-x-36 lg:gap-x-52 xl:gap-x-64">
           <a href={button1Link} target="_blank" className={Button1CSS}>
             {button1Name}
           </a>
