@@ -66,7 +66,7 @@ const ProjectsCarousel = () => {
               text="An addon I have built and released on CurseForge for the MMORPG
               World of Warcraft. There is no table in-game that tells you how good the equipment 
               will be depending on the difficulty of the dungeon, so my addon provides that, and more.
-              It currently has over 6000 downloads!"
+              It currently has over 8500 downloads!"
               hasButton2={true}
               button1Name="Curse Forge Link"
               button1Link="https://www.curseforge.com/wow/addons/mythicplusloottable"
@@ -109,21 +109,6 @@ const ProjectsCarousel = () => {
 
           <SwiperSlide className={slideCSS}>
             <Project
-              name="Selenium QA Tester"
-              image={selenium}
-              text="This was an application built using C# Selenium for Alberta Health
-              Services, testing this website. I built it from a list of QA tests, and the 
-              application ran though each test, checking if certain page elements and information 
-              were working or displayed correctly, and links worked. New tests could also easily be 
-              added for future use."
-              hasButton2={false}
-              button1Name="Website Link"
-              button1Link="https://myhealth.alberta.ca/"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className={slideCSS}>
-            <Project
               name="Zipper"
               image={zipper}
               text="A simple application that zips and unzips files and is built using
@@ -159,6 +144,21 @@ const ProjectsCarousel = () => {
               hasButton2={false}
               button1Name="GitHub Link"
               button1Link="https://github.com/JarHorner/Zelda-Like-Game"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide className={slideCSS}>
+            <Project
+              name="Selenium QA Tester"
+              image={selenium}
+              text="This was an application built using C# Selenium for Alberta Health
+              Services, testing this website. I built it from a list of QA tests, and the 
+              application ran though each test, checking if certain page elements and information 
+              were working or displayed correctly, and links worked. New tests could also easily be 
+              added for future use."
+              hasButton2={false}
+              button1Name="Website Link"
+              button1Link="https://myhealth.alberta.ca/"
             />
           </SwiperSlide>
         </Swiper>
