@@ -13,8 +13,6 @@ const ProfComponent = () => {
   const aCSS =
     "text-white absolute top-2/4 left-2/4 transform -translate-x-1/2 -translate-y-1/2 ";
 
-  const linkToEmail = () => {};
-
   return (
     <div
       id="home"

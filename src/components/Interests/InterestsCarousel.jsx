@@ -19,7 +19,6 @@ import "swiper/css/pagination";
 import { EffectCards, Keyboard, Pagination } from "swiper";
 
 const InterestsCarousel = () => {
-  // const slideCSS = "bg-center bg-cover w-auto h-auto";
   const slideCSS =
   "flex flex-col items-center bg-center bg-cover h-auto w-[80%] mx-auto ";
   const imgCSS =

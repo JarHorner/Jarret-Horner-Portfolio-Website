@@ -7,9 +7,6 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between max-w-7xl w-[90%] my-0 mx-auto py-6 px-0 relative md:w-4/5">
       <div className="flex items-center gap-2">
-        {/* <span className="text-4xl text-red-600">
-         <DiCodeigniter />
-        </span> */}
         <h1 className="text-3xl font-semibold pt-1">Portfolio</h1>
       </div>
       <div className="text-xl">
