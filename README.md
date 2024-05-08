@@ -1,4 +1,4 @@
-# vite-typescript-tailwind-temp
+# vite-javascript-tailwind-temp
  This is my profile webpage using vite with React, Javascript and Tailwind CSS
  
 # How to run
