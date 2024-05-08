@@ -1,5 +1,5 @@
 import React from "react";
-import { HorizontalImageContainer } from "../Helpers/ImageContainer";
+import { ImageContainer } from "../Helpers/ImageContainer";
 
 const Project = (props) => {
   const {
@@ -26,7 +26,7 @@ const Project = (props) => {
   return (
     <div className={slideCSS}>
       <h1 className={h1CSS}>{name}</h1>
-      <HorizontalImageContainer image={image} />
+      <ImageContainer image={image} />
 
       <p className={textCSS}>{text}</p>
       {hasButton2 ? (

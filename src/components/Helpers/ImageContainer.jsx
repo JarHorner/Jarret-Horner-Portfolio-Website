@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const HorizontalImageContainer = ({ image }) => {
+const ImageContainer = ({ image }) => {
   return (
     <div className="flex items-center justify-center">
       <div className="mt-8 h-[600px] w-[900px] overflow-hidden">
@@ -10,4 +10,4 @@ const HorizontalImageContainer = ({ image }) => {
     </div>
   );
 };
-export { HorizontalImageContainer };
+export { ImageContainer };
