@@ -85,7 +85,7 @@ const Contact = () => {
         <form
           id="form"
           onSubmit={sendEmail}
-          className="bg-slate-900 p-3.5 rounded-xl"
+          className="bg-slate-900 p-3.5 rounded-xl mt-8"
         >
           <div className={divInputCSS}>
             <span className={spanInputCSS}>

@@ -23,8 +23,8 @@ const Services = () => {
             Icon={FaBusinessTime}
             title={"Business Tool Developer"}
             disc={`I was in charge of developing a Selenium application for my Alberta Health Services team that would speed up QA testing of
-            the MyHealth Alberta website. It took less than 5 minutes to use the application to test multiple cases that usually take a tester 20 to 
-            30 minutes manually.`}
+            the MyHealth Alberta website. It took less than 5 minutes to use the application to test multiple cases that usually took a tester 15 to 
+            20 minutes manually.`}
           />
         </Slide>
         <Slide direction="right" >
@@ -32,8 +32,8 @@ const Services = () => {
             Icon={CgWebsite}
             title={"Web Developer"}
             disc={`I have created numerous websites, for both personal study (like this one!) and university projects. The process of building
-            these websites has taught me a variety of skills in web development, including UI/UX design using modular and Tailwind CSS, using 
-            various libraries and APIs, and using both front and back-end frameworks like React & node.js`}
+            these websites has taught me a variety of skills in web development, including UI/UX design utilizing frameworks like Tailwind CSS, integrating  
+            various libraries and API's, and employing both front and back-end frameworks like React.js & node.js`}
           />
         </Slide>
         <Slide direction="right">
@@ -41,8 +41,7 @@ const Services = () => {
             Icon={BsPhone}
             title={"Application Developer"}
             disc={`I have created a variety of small applications, one of which is released on the Google Play Store! It is called Floppy Bat, 
-            a simple game that taught me how to create and finish an application using the Unity Engine, programming in C#, integrate ads into 
-            an app, and publish in a store.`}
+            a simple game that taught me how to create and finish a game application using the Unity Engine, programming in C#, integrate ads, and publish in a store.`}
           />
         </Slide>
       </div>

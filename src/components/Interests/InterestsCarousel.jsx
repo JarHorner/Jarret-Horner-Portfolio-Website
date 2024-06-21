@@ -26,7 +26,7 @@ const InterestsCarousel = () => {
   const h1CSS =
     "text-3xl absolute top-2 left-8 font-serif font-bold z-50 sm:text-4xl md:left-16 md:top-6 md:text-5xl lg:top-8";
   const creditsCSS =
-    "absolute text-sm bottom-4 left-6 sm:left-10 md:left-16 md:bottom-8 md:text-lg";
+    "absolute text-sm right-[50%} bottom-2 sm:text-base";
 
   return (
     <div className="mt-6">
@@ -45,7 +45,7 @@ const InterestsCarousel = () => {
         >
           <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Video Games</h1>
-            <img src={PS5} className={imgCSS}></img>
+            <img src={PS5} className={imgCSS} alt="Playstation 5 with Controller"></img>
             <div className={creditsCSS}>
               Photo by{" "}
               <a
@@ -68,7 +68,7 @@ const InterestsCarousel = () => {
 
           <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Dungeons & Dragons</h1>
-            <img src={DandD} className={imgCSS}></img>
+            <img src={DandD} className={imgCSS} alt="Dice on a paper"></img>
             <div className={creditsCSS}>
               Photo by{" "}
               <a
@@ -91,7 +91,7 @@ const InterestsCarousel = () => {
 
           <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Unity Engine</h1>
-            <img src={Unity} className={imgCSS}></img>
+            <img src={Unity} className={imgCSS} alt="Laptop with Unity Engine"></img>
             <div className={creditsCSS}>
               Photo by{" "}
               <a
@@ -114,7 +114,7 @@ const InterestsCarousel = () => {
 
           <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Animals</h1>
-            <img src={Animals} className={imgCSS}></img>
+            <img src={Animals} className={imgCSS} alt="Yorkie Dog"></img>
             <div className={creditsCSS}>
               Photo by{" "}
               <a
@@ -137,7 +137,7 @@ const InterestsCarousel = () => {
 
           <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>ATVing</h1>
-            <img src={ATVing} className={imgCSS}></img>
+            <img src={ATVing} className={imgCSS} alt="Person ATVing in a Forest"></img>
             <div className={creditsCSS}>
               Photo by{" "}
               <a
@@ -160,7 +160,7 @@ const InterestsCarousel = () => {
 
           <SwiperSlide className={slideCSS}>
             <h1 className={h1CSS}>Swimming</h1>
-            <img src={Swimming} className={imgCSS}></img>
+            <img src={Swimming} className={imgCSS} alt="Entrance to Swimming Pool"></img>
             <div className={creditsCSS}>
               Photo by{" "}
               <a

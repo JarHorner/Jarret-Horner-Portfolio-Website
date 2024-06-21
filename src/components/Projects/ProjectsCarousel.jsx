@@ -49,8 +49,8 @@ const ProjectsCarousel = () => {
               image={movieBrowser}
               text="A movie browser website I built for one of my University projects
               with a friend. It is a single-page website built using react.js
-              that searches though movies and provides info. The API it uses
-              contains dummy movie data and was also made by us, using node.js."
+              that searches though movies and provides info. It also uses a REST API using node.js we made
+              to send and retrieve data from a SQL database."
               hasButton2={true}
               button1Name="Webpage Link"
               button1Link="https://web3moviebrowser.netlify.app/"
@@ -100,7 +100,7 @@ const ProjectsCarousel = () => {
               text="Floppy Bat is a simple, easy-to-play, and fast-paced arcade game. 
               I wanted the experience of publishing an application, so I built a simple
               game based on the original game, Flappy Bird. I learned a lot about developing 
-              and polishing an app ready for a store and built it using Unity, in C#."
+              and polishing an app ready for a store and built it in C# using Unity."
               hasButton2={false}
               button1Name="Store Link"
               button1Link="https://play.google.com/store/apps/details?id=com.FrydayGames.FloppyBat"
@@ -127,7 +127,7 @@ const ProjectsCarousel = () => {
               image={wordle}
               text="Wordle+ was an application I started creating when Wordle became the newest
               popluar mobile game. The application works and plays like regular Wordle,
-              but I never polished or released it. I built it using Unity, in C#."
+              but I never polished or released it. I built it in C# using Unity."
               hasButton2={false}
               button1Name="GitHub Link"
               button1Link="https://github.com/JarHorner/Wordle_Clone"
@@ -140,7 +140,7 @@ const ProjectsCarousel = () => {
               image={strangerLands}
               text="This game is a passion project of mine that I have been working on-and-off on for a year,
               and its gameplay will be reminiscent of older Legend of Zelda games. It is being build using using Unity
-              and all the pixel art in the game will all be made by me as well."
+              and all the pixel art found in the game will created by me."
               hasButton2={false}
               button1Name="GitHub Link"
               button1Link="https://github.com/JarHorner/Zelda-Like-Game"

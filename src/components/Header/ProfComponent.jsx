@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 
-import profilePicture from "../../assets/images/Profile_Picture.jpg"
+import profilePicture from "../../assets/images/Profile_Picture.jpg";
 
 const ProfComponent = () => {
   const spanCSS =
@@ -33,13 +33,15 @@ const ProfComponent = () => {
             & Future Software Developer
           </h3>
           <p className="font-light pb-16 w-4/5">
-            Always enthusiastic to learn more about new technologies. Previously
-            worked in an internship with Alberta Health Services Personal Health
-            Portal team, performing Quality Assurance testing and creating an
-            automation application to streamline their QA processes. In my past jobs, 
-            I have learned how to provide amazing customer service, excellent team cooperation, and
-            manage time effectively. I am passionate about the innovative world of
-            technology and the possibilities that come with it.
+            I love to learn and think of creative ways to apply new information,
+            therefore I'm always eager to learn more about new technology. I
+            previously worked in an internship with Alberta Health Services
+            Personal Health Portal team, performing QA testing and creating an
+            automation application to streamline their QA processes. In my past
+            retail jobs, I have learned how to deliver amazing customer service,
+            provide excellent team cooperation, and manage my time efficiently.
+            Overall, I am passionate about the innovative world of technology
+            and the possibilities that come with it.
           </p>
           <a
             href="#portfolio"
@@ -101,10 +103,7 @@ const ProfComponent = () => {
       </Slide>
       <Slide direction="right">
         <div className="custom-shadow ease-in-out-transform hover:translate-y-10 hover:hover-custom-shadow w-full">
-          <img
-          src={profilePicture}
-          alt="profile picture"
-          />
+          <img src={profilePicture} alt="profile picture" />
         </div>
       </Slide>
     </div>
