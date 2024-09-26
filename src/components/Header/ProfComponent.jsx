@@ -5,7 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { Slide } from "react-awesome-reveal";
 
-import profilePicture from "../../assets/images/Profile_Picture.jpg";
+import profilePicture from "../../assets/images/Profile_Picture.webp";
 
 const ProfComponent = () => {
   const spanCSS =
